@@ -974,22 +974,22 @@ showdown.helper.unescapeHTMLEntities = function (txt) {
  * POLYFILLS
  */
 // use this instead of builtin is undefined for IE8 compatibility
-if (typeof(console) === 'undefined') {
-  console = {
-    warn: function (msg) {
-      'use strict';
-      alert(msg);
-    },
-    log: function (msg) {
-      'use strict';
-      alert(msg);
-    },
-    error: function (msg) {
-      'use strict';
-      throw msg;
-    }
-  };
-}
+// if (typeof(console) === 'undefined') {
+//   console = {
+//     warn: function (msg) {
+//       'use strict';
+//       alert(msg);
+//     },
+//     log: function (msg) {
+//       'use strict';
+//       alert(msg);
+//     },
+//     error: function (msg) {
+//       'use strict';
+//       throw msg;
+//     }
+//   };
+// }
 
 /**
  * Common regexes.
